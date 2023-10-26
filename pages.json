@@ -1,0 +1,320 @@
+{
+	"easycom": {
+		"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+		"^com-(.*)": "@/component/com-$1/com-$1.vue",
+		"^uni-(.*)": "@/component/uni-$1/uni-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+		    "path" : "pages/login/login",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom",
+		        "navigationBarTitleText": "",
+		        "enablePullDownRefresh": false
+		    }
+		    
+		},
+		{
+			"path": "pages/mission/mission",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "待办任务"
+			}
+		},
+        {
+            "path": "pages/customerconfirm/customerconfirm",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "客户确认"
+            }
+        },
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "冷库PDA"
+			}
+		}
+        ,{
+            "path" : "pages/main/main",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": true
+            }
+            
+        },{
+		    "path" : "pages/user/user",
+		    "style" :                                                                                    
+		    {
+		        "navigationBarTitleText": "个人资料",
+		        "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+		    }		    
+		},{
+		    "path" : "pages/dealt/dealt",
+		    "style" :                                                                                    
+		    {
+				"navigationStyle": "custom",
+		        "navigationBarTitleText": "待办任务",
+		        "enablePullDownRefresh": true,
+				"onReachBottomDistance":20
+		    }		    
+		},{
+            "path" : "pages/forklift/forklift",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "叉车作业",
+                "enablePullDownRefresh": true,
+                "onReachBottomDistance":0
+            }           
+        }
+        ,{
+            "path" : "pages/wareinfo/wareinfo",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "入库信息",
+                "enablePullDownRefresh": false,
+				"app-plus":{"scrollIndicator":"none"}
+            }
+            
+        },{
+            "path" : "pages/forkliftinfo/forkliftinfo",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "叉车详情",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            }
+            
+        },{
+            "path" : "pages/warerecord/warerecord",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "入库登记",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom",
+				"app-plus":{"scrollIndicator":"none"}
+            }
+        },{
+            "path" : "pages/commonscan/commonscan",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "扫码",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            } 
+        },{
+            "path" : "pages/mainscan/mainscan",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "扫一扫",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            } 
+        }
+        ,{
+            "path" : "pages/warescan/warescan",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "入库扫码",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            } 
+        },{
+            "path" : "pages/outbound/outbound",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "出库信息",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            } 
+        },{
+            "path" : "pages/outboundscan/outboundscan",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "出库扫码",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            } 
+        }
+        ,{
+            "path" : "pages/waremanager/waremanager",
+            "style" :                                                                                    
+            {
+				"navigationStyle": "custom",
+                "navigationBarTitleText": "入库管理",
+                "enablePullDownRefresh": true,
+                "onReachBottomDistance":20
+            }
+        }
+        ,{
+            "path" : "pages/outboundmove/outboundmove",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "出库信息搬运视图",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            }
+            
+        },{
+            "path" : "pages/waremove/waremove",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "入库信息搬运视图",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            }
+            
+        }
+        ,{
+            "path" : "pages/adjust/adjust",
+            "style" :
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "调仓信息",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            }
+            
+        },{
+            "path" : "pages/adjustscan/adjustscan",
+            "style" :
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "调仓信息-扫码",
+                "enablePullDownRefresh": false,
+                "app-plus":{"scrollIndicator":"none"}
+            }
+            
+        },{
+            "path": "pages/waremanagerinfo/waremanagerinfo",
+            "style": {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "入库信息"
+            }
+        },{
+            "path" : "pages/loginfo/loginfo",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "日志",
+                "enablePullDownRefresh": false,
+                "onReachBottomDistance":0
+            }
+        },{
+            "path" : "pages/addworker/addworker",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "添加人员"
+            }
+        },{
+            "path" : "pages/addincidental/addincidental",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "添加费用"
+            }
+        },{
+            "path" : "pages/outboundmanager/outboundmanager",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "出库管理",
+                "enablePullDownRefresh": true,
+                "onReachBottomDistance":20
+            }
+        },{
+            "path" : "pages/outboundmanagerinfo/outboundmanagerinfo",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "出库信息"
+            }
+        }
+        ,{
+            "path" : "pages/inventorymanager/inventorymanager",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "库存管理",
+                "enablePullDownRefresh": true,
+                "navigationStyle": "custom",
+                "onReachBottomDistance":20
+            }
+            
+        },{
+            "path" : "pages/inventorymanagerinfo/inventorymanagerinfo",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "库存详情",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom"
+            }
+            
+        },{
+            "path" : "pages/adjustmanager/adjustmanager",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "调仓管理",
+                "enablePullDownRefresh": false,
+                "navigationStyle": "custom",
+                "onReachBottomDistance":20
+            }
+        },{
+            "path" : "pages/adjustmanagerinfo/adjustmanagerinfo",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "调仓信息详情"
+            }
+        }
+        ,{
+            "path" : "pages/customer/customer",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "客户",
+                "enablePullDownRefresh": true,
+				"navigationBarBackgroundColor": "white",
+                "onReachBottomDistance":0
+            }
+            
+        },{
+            "path" : "pages/editadjustinfo/editadjustinfo",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "编辑",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "white"
+            }    
+        },{
+            "path" : "pages/selectgoods/selectgoods",
+            "style" :                                                                                    
+            {
+                "navigationStyle": "custom",
+                "navigationBarTitleText": "货品",
+                "enablePullDownRefresh": false,
+                "navigationBarBackgroundColor": "white"
+            }    
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "冷库PDA",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"uniIdRouter": {}
+}
